@@ -54,15 +54,15 @@
 
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">1-on-1 CONSULTATION</a></li>
-                            <li class="active"><a href="makeup_guide.html">E-BOOK</a></li>
-							<li class="active"><a href="index.html">ABOUT ME</a></li>
-							<li class="active"><a href="index.html">HOME</a></li>
-						</ul>
-						<ul class="icons">
-							<li>
+                    <nav id="nav">
+                        <ul class="links">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="makeup_guide.html">E-Book</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="consultation.html">CONSULTATION</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li>
                                 <a href="https://www.youtube.com/@fabulous_facesbyzee"
                                     class="icon brands alt fa-youtube">
                                     <span class="label">YouTube</span>
@@ -73,15 +73,15 @@
                                 class="icon brands alt fa-instagram">
                                     <span class="label">Instagram</span>
                                 </a>
-                            </li>							
+                            </li>                           
                             <li>
                                 <a href="https://www.facebook.com/fabulousfacesbyzee/"
                                 class="icon brands alt fa-facebook">
                                     <span class="label">Facebook</span>
                                 </a>
-                            </li>						
+                            </li>                       
                         </ul>
-					</nav>
+                    </nav>
 
 				
 <div id="main">
@@ -96,7 +96,7 @@
     
                 
                 <div class="image fit">
-                    <video width="100%" controls playsinline muted poster="images/cover_photo_headshot.jpeg">
+                    <video width="100%" height="auto" controls playsinline muted autoplay loop poster="images/cover_photo_headshot.jpeg">
                         <source src="images/Ebook_intro.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -111,61 +111,55 @@
 
 </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-                <p>Feel free to reach out to me and share your personal experiences about makeup and how I could help you take it to the next level.
-                    <ul class="links">
-                        <li class="active"><a href="index.html">1-on-1 CONSULTATION</a></li>
-                    </ul>
-                </p>  
-                
-							<form method="post" action = "">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-
-
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Abuja, Nigeria.</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+234)</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">zeefacesinfo@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.youtube.com/@fabulous_facesbyzee" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-									<li><a href="https://www.instagram.com/fabulous_facesbyzee?igsh=MXZjanJmOTdtYzVjeQ==" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.facebook.com/fabulousfacesbyzee/" class="icon brands alt fa-facebook"><span class="label">Facebook</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+<!-- Footer -->
+<footer id="footer">
+    <section>
+        <header>
+            <h3 style="text-transform: none; letter-spacing: normal; font-family: 'Times New Roman', serif; font-style: italic;">Let's Connect</h3>
+            <p>Have questions about a look or want to share your makeup journey? I'd love to hear from you. Send me a message and let's take your glamour to the next level.</p>
+        </header>
+        <form method="POST" action="https://formspree.io/f/xnjnengj">
+            <div class="fields">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email@example.com" required />
+                </div>
+                <div class="field">
+                    <label for="message">How can I help you?</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Tell me about your makeup goals..."></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary" /></li>
+            </ul>
+        </form>
+    </section>
+    <section class="split contact">
+        <section>
+            <h3>Quick Links</h3>
+            <p>
+                <a href="consultation.html" style="border-bottom: dotted 1px;">Book 1-on-1 Session</a><br />
+                <a href="makeup_guide.html" style="border-bottom: dotted 1px;">Get the E-Book</a>
+            </p>
+        </section>
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:zeefacesinfo@gmail.com">zeefacesinfo@gmail.com</a></p>
+        </section>
+        <section>
+            <h3>Social Media</h3>
+            <ul class="icons alt">
+                <li><a href="https://www.youtube.com/@fabulous_facesbyzee" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="https://www.instagram.com/fabulous_facesbyzee" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.facebook.com/fabulousfacesbyzee/" class="icon brands alt fa-facebook"><span class="label">Facebook</span></a></li>
+            </ul>
+        </section>
+    </section>
+</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
