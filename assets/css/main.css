@@ -3281,22 +3281,15 @@ input, select, textarea {
 /* MOBILE CONFIGURATION */
 @media screen and (max-width: 980px) {
     #wrapper > .bg {
-        /* Overwrite the list of 3 images with just ONE for mobile */
+        /* CRITICAL FIX: We overwrite the list of 3 images with just ONE.
+           The left and right images are removed completely here. 
+        */
         background-image: url("../../images/zee_head_shot.jpg");
         
-        /* SIZE ADJUSTMENT: 
-           Change 'cover' to a smaller value like '60%' or '70vw'.
-           'auto' keeps the height proportional so the face doesn't stretch.
-        */
-        background-size: 60% auto; 
-        
-        /* Keep it centered */
-        background-position: center center;
-        
-        /* Ensure the image doesn't repeat if it's smaller than the screen */
-        background-repeat: no-repeat;
-        
-        background-attachment: scroll; 
+        /* Mobile Sizing: 'cover' fills the phone screen better than 'auto 100vh' */
+        background-size: cover;       
+        background-position: center top;
+        background-attachment: scroll; /* Disables parallax on mobile for smoother scrolling */
     }
 }
 
