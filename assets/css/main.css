@@ -3518,17 +3518,25 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
 			#intro {
-				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				/* This forces the content to the center vertically */
+				justify-content: center !important; 
+				align-items: center;
+				
+				/* Adjust padding to move it slightly higher than dead center */
+				padding: 2rem 2rem 6rem 2rem; 
+				
+				/* Ensures the section takes up most of the screen */
+				min-height: 90vh; 
+				display: flex;
+				flex-direction: column;
 			}
 
-				#intro h1 {
-					font-size: 3rem;
-					line-height: 1.1;
-					margin-bottom: 1rem;
-				}
+			#intro h1 {
+				font-size: 2.5rem; /* Makes the title fit better on small screens */
+				white-space: normal !important; /* Allows text to wrap so it doesn't bleed off screen */
+				line-height: 1.2;
+			}
 
 				#intro p {
 					font-size: 1rem;
@@ -3536,7 +3544,7 @@ input, select, textarea {
 				}
 
 				#intro .actions {
-					display: none;
+					display: block;
 				}
 
 		}
