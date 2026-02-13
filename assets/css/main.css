@@ -3536,7 +3536,7 @@ input, select, textarea {
 				}
 
 				#intro .actions {
-					display: block;
+					display: none;
 				}
 
 		}
